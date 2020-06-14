@@ -123,6 +123,7 @@ section.about-us .about-image {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-right: 20px;
 }
 
 section.about-us .apresentation {
@@ -334,6 +335,9 @@ footer section.contact section{
 }
 
 footer section.contact section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 420px;
     height: 90px;
     border-radius: 100px;

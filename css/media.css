@@ -1,22 +1,39 @@
-@media (max-width: 1000px){
-    nav header div.site-heading{
+@media (max-width: 1000px) {
+    nav header div.site-heading {
         width: 100%;
+        justify-content: center;
+        text-align: center;
     }
-    nav header div.image{
+    nav div.main-navigation{
+        justify-content: center;
+        align-items: center;
+    }
+    nav div.main-navigation div.topnav{
         display: none;
     }
-
-    section.about-us{
+    header div.contact {
+        width: 100%;
+    }
+    nav header div.image {
+        display: none;
+    }
+    section.about-us {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    section.about-us .apresentation{
-        width: 100%;
-        margin-top: 40px;
+    section.about-us div.about-image {
+        display: none;
     }
-    section.clinics-list div.list{
+    section.about-us .apresentation {
+        width: 100%;
+        margin: 0;
+
+    }
+    section.about-us .apresentation p {
+        font-size: 100%;
+    }
+    section.clinics-list div.list {
         margin-right: 0;
         margin-top: 0;
         display: flex;
@@ -25,10 +42,10 @@
         justify-content: center;
         align-items: center;
     }
-    div.list div.clinics{
-        margin: 0; 
+    div.list div.clinics {
+        margin: 0;
     }
-    section.specialized div.boxes-specialized{
+    section.specialized div.boxes-specialized {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -40,10 +57,25 @@
         width: 300px;
         height: 300px;
     }
-
-    section.specialized{
+    section.specialized {
         width: 100%;
         height: auto;
     }
-
+    footer section.contact section {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    footer section.contact section div {
+        width: 90%;
+        margin: 10px 0;
+    }
+    footer section.contact section div h3 {
+        font-size: 28px;
+    }
+    footer section.developer {
+        justify-content: center;
+        text-align: center;
+    }
 }
