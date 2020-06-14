@@ -1,0 +1,38 @@
+div.list a div.clinics{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ----------------------------- GUARULHOS -----------------------------  */
+
+div.list a:nth-child(1) div.clinics{
+    background-image: url("../assets/images/guarulhos-sp/guarulhos-sp-img1.jpg");
+}
+div.list a:nth-child(2) div.clinics{
+    background-image: url("../assets/images/guarulhos-sp/guarulhos-sp-img2.jpg");
+}
+div.list a:nth-child(3) div.clinics{
+    background-image: url("../assets/images/guarulhos-sp/guarulhos-sp-img3.jpg");
+}
+
+/* ----------------------------- ITABORAI -----------------------------  */
+
+div.list a:nth-child(8) div.clinics{
+    background-image: url("../assets/images/itaborai-rj/itaborai-rj-img1.jpg");
+}
+div.list a:nth-child(9) div.clinics{
+    background-image: url("../assets/images/itaborai-rj/itaborai-rj-img2.jpg");
+}
+div.list a:nth-child(10) div.clinics{
+    background-image: url("../assets/images/itaborai-rj/itaborai-rj-img3.jpg");
+}
+
+/* ----------------------------- SEROPEDICA -----------------------------  */
+
+div.list a:nth-child(23) div.clinics{
+    background-image: url("../assets/images/seropedica-rj/seropedica-rj-img1.jpg");
+}
+div.list a:nth-child(24) div.clinics{
+    background-image: url("../assets/images/seropedica-rj/seropedica-rj-img2.jpg");
+}

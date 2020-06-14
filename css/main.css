@@ -291,8 +291,13 @@ div.list {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+div.list a{
+    text-decoration: none;
+}
 div.list div.clinics {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     border: solid 10px white;
     border-radius: 10px;
     width: 280px;
@@ -306,6 +311,27 @@ div.list div.clinics {
 div.list div.clinics:hover {
     transform: scale(0.9);
     transition: 0.2s ease-out;
+}
+
+div.list div.clinics div.caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.605);
+    width: 100%;
+    height: 20%;
+    opacity: 0;
+}
+
+div.list div.clinics:hover > div.caption{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+div.list div.clinics div.caption h3{
+    color: #FFFFFF;
 }
 
 /* -------------------------------------------------------- */
