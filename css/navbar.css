@@ -10,21 +10,27 @@
     display: block;
     color: #20AABD;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px;
     text-decoration: none;
     font-size: 18px;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
-.topnav a:hover{
-    transform: scale(0.99);
-    transition: 0.2s ease-out;
-}
-
-.topnav a.active {
+.topnav a.active{
     background-color: #20AABD;
     color: white;
-    border-radius: 100px;
+    border-radius: 40px;
     min-width: 180px;
+    margin: 0px;
 }
 
+.topnav a:hover {
+    color: #345263;
+    transition: 0.3s;
+}
+
+.topnav a.active:hover {
+    background-color: #345263;
+    color: white;
+    transition: 0.3s;
+}

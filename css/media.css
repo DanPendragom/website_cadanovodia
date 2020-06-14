@@ -1,20 +1,29 @@
+
+
 @media (max-width: 1000px) {
-    nav header div.site-heading {
+    nav div.main-navigation {
+        justify-content: center;
+        align-items: center;
+    }
+    div.main-navigation div.topnav {
+        display: none;
+    }
+    header div.site-heading {
         width: 100%;
         justify-content: center;
         text-align: center;
     }
-    nav div.main-navigation{
-        justify-content: center;
-        align-items: center;
+    header div.site-heading h1 {
+        text-align: center;
+        font-size: 60px;
     }
-    nav div.main-navigation div.topnav{
-        display: none;
+    header div.site-heading h1 span {
+        font-size: 30px;
     }
     header div.contact {
         width: 100%;
     }
-    nav header div.image {
+    header div.image {
         display: none;
     }
     section.about-us {
@@ -28,7 +37,9 @@
     section.about-us .apresentation {
         width: 100%;
         margin: 0;
-
+    }
+    section.specialized div.title-specialized h3 {
+        font-size: 35px;
     }
     section.about-us .apresentation p {
         font-size: 100%;
@@ -61,6 +72,9 @@
         width: 100%;
         height: auto;
     }
+    footer section.contact h3 {
+        font-size: 5vw;
+    }
     footer section.contact section {
         justify-content: center;
         align-items: center;
@@ -77,5 +91,53 @@
     footer section.developer {
         justify-content: center;
         text-align: center;
+    }
+}
+
+@media (max-width: 465px) {
+    nav div.main-navigation img.logo {
+        width: 100%;
+        height: auto;
+    }
+    header div.site-heading h1 {
+        font-size: 16vw;
+        line-height: auto;
+    }
+    header div.site-heading h1 span {
+        font-size: 8vw;
+    }
+    header div.site-heading h2 {
+        font-size: 14vw;
+    }
+    header div.contact img {
+        width: 100%;
+        height: auto;
+    }
+    header div.contact button.whats {
+        width: 100%;
+        font-size: 4vw;
+    }
+    section.specialized div.title-specialized h3 {
+        font-size: 6vw;
+    }
+    div.search-clinics h3 {
+        font-size: 6vw;
+    }
+    div.search-clinics h3 span {
+        font-size: 7vw;
+    }
+}
+
+@media (min-width: 1500px) {
+    section.specialized div.boxes-specialized{
+        justify-content: flex-start;
+    }
+    section.specialized div.boxes-specialized div{
+        margin-right: 25px;
+    }
+    section.about-us .apresentation {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 80px;
     }
 }
