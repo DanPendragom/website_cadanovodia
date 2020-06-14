@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'gbold';
+    src: url('../assets/fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'glight';
+    src: url('../assets/fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/gilroy-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

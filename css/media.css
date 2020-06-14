@@ -1,0 +1,49 @@
+@media (max-width: 1000px){
+    nav header div.site-heading{
+        width: 100%;
+    }
+    nav header div.image{
+        display: none;
+    }
+
+    section.about-us{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.about-us .apresentation{
+        width: 100%;
+        margin-top: 40px;
+    }
+    section.clinics-list div.list{
+        margin-right: 0;
+        margin-top: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.list div.clinics{
+        margin: 0; 
+    }
+    section.specialized div.boxes-specialized{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section.specialized div.boxes-specialized div:nth-child(-n+4) {
+        margin-right: 0;
+        width: 300px;
+        height: 300px;
+    }
+
+    section.specialized{
+        width: 100%;
+        height: auto;
+    }
+
+}
