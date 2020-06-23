@@ -68,16 +68,18 @@ header div.contact {
     width: 280px;
 }
 
-header div.contact img{
-    width: 220px; 
-    height:25px; 
+header div.contact img {
+    margin-top: 5px;
+    width: 220px;
+    height: 25px;
 }
+
 header div.contact button.whats {
     border: 0;
     background-color: #F27881;
     width: 280px;
     border-radius: 30px;
-    padding: 20px;
+    padding: 18px 24px;
     color: #ffffff;
     font-family: gbold;
     font-weight: bolder;
@@ -86,6 +88,12 @@ header div.contact button.whats {
     outline: none;
     cursor: pointer;
     margin-bottom: 10px;
+}
+
+header div.contact button.whats:hover {
+    background-color: #345263;
+    transform: scale(1.05);
+    transition: 0.2s;
 }
 
 header div.image {
@@ -98,8 +106,8 @@ header div.image {
 header div.image .clinica {
     position: absolute;
     width: 440px;
-    height: 480px;
-    border-radius: 40px 40px 40px 40px;
+    height: 520px;
+    border-radius: 30px;
     background-image: url("../assets/header.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -128,7 +136,7 @@ section.about-us {
 section.about-us .about-image {
     width: 500px;
     height: 600px;
-    border-radius: 40px;
+    border-radius: 30px;
     background-image: url("../assets/header.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -176,11 +184,16 @@ section.specialized div.title-specialized h3 {
     font-weight: bolder;
 }
 
+section.specialized div.title-specialized h3:hover {
+    color: #E27EA3;
+    transition: 0.2s;
+    cursor: context-menu;
+}
+
 section.specialized div.boxes-specialized {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-top: 25px;
 }
 
@@ -194,18 +207,18 @@ section.specialized div.boxes-specialized>* {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 250px;
-    height: 250px;
-    cursor: pointer;
+    width: 20vw;
+    height: 20vw;
+    cursor: context-menu;
 }
 
 section.specialized div.boxes-specialized>*:hover {
-    transition: 0.1s ease-in;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
 }
 
 section.specialized div.boxes-specialized div:nth-child(-n+3) {
-    margin-right: 25px;
+    margin-right: 2vw;
 }
 
 section.specialized div.boxes-specialized div:nth-child(1) {
@@ -229,6 +242,10 @@ section.specialized div.boxes-specialized div:nth-child(4) {
 main.main-section {
     margin-top: 50px;
     background-color: #22ACBF;
+    background-image: url("../assets/images/menus/img-locais.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 550px;
     min-width: 100%;
     padding: 64px;
@@ -240,7 +257,7 @@ div.search-clinics h3 {
 }
 
 div.search-clinics h3 span {
-    color: #FFFFFF;
+    color: #F5EAC0;
     font-size: 55px;
 }
 
@@ -258,28 +275,27 @@ div.places button.place {
     margin-top: 35px;
     margin-right: 20px;
     border-radius: 100px;
-    min-height: 50px;
-    width: 250px;
     max-width: auto;
-    padding: 0 35px;
+    padding: 10px 40px;
     background-color: #FFFFFF;
     color: #22ACBF;
     border: none;
     outline: none;
-    cursor: pointer;
+    cursor: context-menu;
     font-size: 22px;
 }
 
 div.places button.place:hover {
-    transform: scale(1.1);
-    transition: 0.1s ease-in;
+    background-color: #003B5D;
+    color: #ffffff;
+    transition: 0.2s;
 }
 
 /* -------------------------------------------------------- */
 
 section.clinics-list {
     background-color: #FFFFFF;
-    padding: 64px;
+    padding: 64px 0px 64px 64px;
     min-height: 50vh;
     min-width: 100%;
 }
@@ -291,46 +307,49 @@ div.list {
     flex-direction: row;
     flex-wrap: wrap;
 }
-div.list a{
+
+div.list a {
     text-decoration: none;
 }
+
 div.list div.clinics {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    border: solid 10px white;
-    border-radius: 10px;
-    width: 280px;
-    height: 280px;
+    border: solid 12px white;
+    width: 20vw;
+    height: 20vw;
     margin-top: 25px;
-    margin-right: 25px;
-    background-color: antiquewhite;
-    cursor: pointer;
+    margin-right: 2vw;
+    background-color: #003B5D;
+    cursor: zoom-in;
+    box-shadow: 0px 5px 10px rgba(0, 59, 93, 0.1);
 }
 
 div.list div.clinics:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
+    transform: rotate(-2.4deg);
     transition: 0.2s ease-out;
 }
 
-div.list div.clinics div.caption{
+div.list div.clinics div.caption {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     color: #FFFFFF;
-    background-color: rgba(0, 0, 0, 0.605);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
     width: 100%;
     height: 20%;
     opacity: 0;
 }
 
-div.list div.clinics:hover > div.caption{
+div.list div.clinics:hover>div.caption {
     opacity: 1;
     transition: 0.2s;
 }
 
-div.list div.clinics div.caption h3{
+div.list div.clinics div.caption h3 {
     color: #FFFFFF;
 }
 
@@ -352,13 +371,14 @@ footer section.contact {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: 350px;
 }
 
 footer section.contact h3 {
     text-align: center;
     color: #F4ac6a;
-    font-size: 40px;
+    font-size: 42px;
+    letter-spacing: 2px;
 }
 
 footer section.contact section {
@@ -377,7 +397,7 @@ footer section.contact section div {
     justify-content: center;
     align-items: center;
     width: 420px;
-    height: 90px;
+    height: 80px;
     border-radius: 100px;
     background-color: #4a4f55;
     margin-right: 25px;
@@ -386,8 +406,18 @@ footer section.contact section div {
 
 footer section.contact section div h3 {
     color: #FFFFFF;
-    font-size: 35px;
+    font-size: 32px;
     letter-spacing: 3px;
+}
+
+footer section.contact section div img {
+    margin-right: 15px;
+    filter: opacity(0.6);
+}
+
+footer section.contact section div :hover {
+    color: #F4AC6A;
+    cursor: context-menu;
 }
 
 footer section.developer {
@@ -403,5 +433,5 @@ footer section.developer {
 footer section.developer h4 {
     color: #75818E;
     font-family: gbold;
-    font-size: 18px;
+    font-size: 20px;
 }
