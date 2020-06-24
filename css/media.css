@@ -86,10 +86,11 @@
     }
     footer section.contact section div {
         width: 90%;
+        padding: 0 20px;
         margin: 10px 0;
     }
     footer section.contact section div h3 {
-        font-size: 28px;
+        font-size: 20px;
     }
     footer section.developer {
         justify-content: center;
